@@ -41,7 +41,7 @@ pipeline
 
     post
 	{
-			sucess
+			success
 			{
 			   sh label: '', script: 'scp /home/ubuntu/.jenkins/workspace/DeclarativePipeline/webapp/target/webapp.war ubuntu@172.31.90.97:/var/lib/tomcat8/webapps/prodapp.war'
 	
