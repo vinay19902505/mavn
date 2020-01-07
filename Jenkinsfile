@@ -37,7 +37,16 @@ pipeline
             sh label: '', script: 'java -jar /home/ubuntu/.jenkins/workspace/DeclarativePipeline/testing.jar'
    	    }
         }     
-        
+        stage('ContDelivery')
+        {
+            steps
+            {
+               sh label: '', script: 'scp /home/ubuntu/.jenkins/workspace/DeclarativePipeline/webapp/target/webapp.war ubuntu@172.31.90.97:/var/lib/tomcat8/webapps/prodapp.war'
+            }
+      	}
+
+
+
     }     
     
 }
