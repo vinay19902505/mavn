@@ -37,7 +37,7 @@ pipeline
             sh label: '', script: 'java -jar /home/ubuntu/.jenkins/workspace/DeclarativePipeline/testing.jar'
    	    }
         }     
-    } 
+   }   
 
     post
 	{
