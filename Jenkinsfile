@@ -72,14 +72,13 @@ pipeline
         {
             steps
             {
-			
+		
 			script
 				{
 				try 
 				  {
                  git 'https://github.com/selenium-saikrishna/FunctionalTesting.git'
-            sh label: '', script: 'java -jar /home/ubuntu/.jenkins/workspace/DeclarativePipeline/testing.jar'
-				  }
+            				  }
 				catch(Exception e1)
 				  {
 				mail bcc: '', body: '', cc: '', from: '', replyTo: '', subject: 'test failed', to: 'hilton.ciber@gmail.com'
